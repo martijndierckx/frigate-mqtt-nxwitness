@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+ frigate-mqtt-nxwitness:
+   build:
+     context: .
+   volumes:
+     - /Users/martijn/frigate-mqtt-nxwitness/config:/config
+   command: npm start

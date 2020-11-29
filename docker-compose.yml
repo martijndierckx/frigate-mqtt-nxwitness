@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  frigate-mqtt-nxwitness:
+    container_name: frigate-mqtt-nxwitness
+    restart: unless-stopped
+    image: martijndierckx/frigate-mqtt-nxwitness
+    volumes:
+      - /Users/martijn/frigate-mqtt-nxwitness/config:/config
